@@ -83,7 +83,7 @@ class Step: Hashable, Equatable, CustomDebugStringConvertible {
         let namedMatches: [String: String]
         let debugDescription: String
 
-        if #available(iOS 11.0, OSX 10.13, *) {
+        if #available(iOS 11.0, OSX 10.13, tvOS 11.0, *) {
 
             let cleanedMatches = groupsNames
                 .compactMap { (groupName) -> (groupName: String, range: Range<String.Index>)? in
